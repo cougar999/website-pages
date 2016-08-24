@@ -1,0 +1,473 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<!-- <base href="http://182.92.74.166:8080/"> -->
+		<title>APP Demo</title>
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+		<meta http-equiv="description" content="This is my page">
+
+
+		<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+	</head>
+	<style type="text/css">
+#top {
+	height: auto;
+	width: 1050px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+#pic {
+	float: left;
+	margin: auto;
+	height: 350px;
+	width: 340px;
+	margin-right: 10px;
+	/*background: #FFFF00;*/
+}
+
+#movie {
+	float: left;
+	margin: auto;
+	height: 350px;
+	width: 340px;
+	margin-right: 10px;
+	/*background: #FFD700;*/
+}
+
+#model {
+	float: right;
+	margin: auto;
+	height: 350px;
+	width: 350px;
+	/*background: #FFA500;*/
+}
+
+/*#btmodel {
+	background: #3399FF
+}
+*/
+#mv {
+	height: auto;
+	width: 1050px;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+#first {
+	float: left;
+	margin-left: 50px;
+	height: 500px;
+	width: 500px;
+	margin: 10px;
+	height: 500px;
+}
+
+#second {
+	float: right;
+	margin: auto;
+	height: 500px;
+	width: 500px;
+	margin: 10px;
+}
+</style>
+<style type="text/css">
+#welcome {
+	padding: 2em 0;
+}
+#welcome .content {
+	padding: 0;
+}
+
+/* Basic Grey */
+.basic-grey {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    background: #F7F7F7;
+    padding: 25px 15px 25px 10px;
+    font: 12px Georgia, "Times New Roman", Times, serif;
+    color: #888;
+    text-shadow: 1px 1px 1px #FFF;
+    border:1px solid #E4E4E4;
+}
+.basic-grey h1 {
+    font-size: 25px;
+    padding: 0px 0px 10px 40px;
+    display: block;
+    border-bottom:1px solid #E4E4E4;
+    margin: -10px -15px 30px -10px;;
+    color: #888;
+}
+.basic-grey h1>span {
+    display: block;
+    font-size: 11px;
+}
+.basic-grey label {
+    display: block;
+    margin: 0px;
+    text-align: center;
+}
+.basic-grey label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+    color: #888;
+}
+.basic-grey input[type="text"], .basic-grey input[type="email"], .basic-grey textarea, .basic-grey select {
+    border: 1px solid #DADADA;
+    color: #888;
+    height: 30px;
+    margin-bottom: 16px;
+    margin-right: 6px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 70%;
+    font-size: 12px;
+    line-height:15px;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+    -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+.basic-grey textarea{
+    padding: 5px 3px 3px 5px;
+}
+.basic-grey select {
+    background: #FFF url('down-arrow.png') no-repeat right;
+    background: #FFF url('down-arrow.png') no-repeat right);
+    appearance:none;
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    width: 70%;
+    height: 35px;
+    line-height: 25px;
+}
+.basic-grey textarea{
+    height:100px;
+}
+.basic-grey .buttonbtn {
+    background: #E27575;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #9E3F3F;
+    cursor: pointer;
+}
+.basic-grey .buttonbtn:hover {
+    background: #CF7A7A
+}
+/* Elegant Aero */
+.elegant-aero {
+    margin-left:auto;
+    margin-right:auto;
+
+    max-width: 500px;
+    background: #D2E9FF;
+    padding: 20px 20px 20px 20px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #666;
+}
+.elegant-aero h1 {
+    font: 24px "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 10px 10px 16px 20px;
+    display: block;
+    background: #C0E1FF;
+    border-bottom: 1px solid #B8DDFF;
+    margin: -20px -20px 22px -20px;
+}
+.elegant-aero h1>span {
+    display: block;
+    font-size: 11px;
+}
+
+.elegant-aero label>span {
+    float: left;
+    margin-top: 10px;
+    color: #5E5E5E;
+}
+.elegant-aero label {
+    display: block;
+    margin: 0px 0px 5px;
+    text-align: center;
+}
+.elegant-aero label>span {
+    float: left;
+    width: 20%;
+    text-align: right;
+    padding-right: 15px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.elegant-aero input[type="text"], .elegant-aero input[type="email"], .elegant-aero textarea, .elegant-aero select {
+    color: #888;
+    width: 70%;
+    padding: 0px 0px 0px 5px;
+    border: 1px solid #C5E2FF;
+    background: #FBFBFB;
+    outline: 0;
+    -webkit-box-shadow:inset 0px 1px 6px #ECF3F5;
+    box-shadow: inset 0px 1px 6px #ECF3F5;
+    font: 200 12px/25px Arial, Helvetica, sans-serif;
+    height: 30px;
+    line-height:15px;
+    margin: 2px 6px 16px 0px;
+}
+.elegant-aero textarea{
+    height:100px;
+    padding: 5px 0px 0px 5px;
+    width: 70%;
+}
+.elegant-aero .buttonbtn{
+    padding: 10px 30px 10px 30px;
+    background: #66C1E4;
+    border: none;
+    color: #FFF;
+    box-shadow: 1px 1px 1px #4C6E91;
+    -webkit-box-shadow: 1px 1px 1px #4C6E91;
+    -moz-box-shadow: 1px 1px 1px #4C6E91;
+    text-shadow: 1px 1px 1px #5079A3;
+   cursor: pointer;
+}
+.elegant-aero .buttonbtn:hover{
+    background: #3EB1DD;
+}
+.btn {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #f5f5f5;
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+    background-repeat: repeat-x;
+    border-color: #cccccc #cccccc #b3b3b3;
+    border-image: none;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 4px 12px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+}
+.btn-primary {
+    background-color: #006dcc;
+    background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.fileUpload {
+	position: relative;
+	overflow: hidden;
+	margin: 10px;
+}
+.fileUpload input.custom-file-upload {
+	position: absolute;
+	top: 0;
+	right: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+}
+.clear {
+	clear: both;
+}
+.video-background {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#header-wrapper {
+	background: #fff;
+	z-index: -2;
+	height: 450px;
+}
+.video-background video {
+	width: 100%;
+}
+</style>
+	<body>
+		<div id="header-wrapper">
+			<div id="header" class="container" style="z-index:99;position:relative;text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);">
+				<div id="logo">
+					<h1 style="color: white;">
+						欢迎来到源奇点世界
+					</h1>
+					
+					<label style="color: white;">
+						Hi, here is Singularity from tomorrow.
+					</label>
+				</div>
+			</div>
+			<div class="video-background" style="z-index:0">
+			    <video poster="ikea.jpg" webkit-playsinline="" muted="muted" preload="auto" autoplay="autoplay" loop="loop">
+			      <source type="video/mp4" src="ikea.mp4"></source>
+			      <source type="video/webm" src="ikea.webm"></source>
+			    </video>
+			</div>
+		</div>
+		
+		<div id="wrapper1" style="position:relative;z-index:99;text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);">
+			<div id="welcome" class="container">
+				<div class="title">
+					<h2>
+						源奇点世界功能介绍
+					</h2>
+					<span class="byline">hello Singularity</span>
+				</div>
+				<div class="content">
+					<p>
+						上传标图注意事项： 1.图片不宜过大否则手机会崩溃 2.图片最好是正方形为主
+						<br>
+						上传素材注意事项：1.最后以图片为主，其他例如 视频，模型等素材会陆续开放
+					</p>
+					<br>
+					<div id="top">
+						<div id="pic" class="upload_box">
+							<form action="zxy/LoginServlet" method="post"
+								enctype="multipart/form-data" class="basic-grey">
+								<h1>上传图片素材
+							        <span>点击按钮选择相应素材.</span>
+							    </h1>
+
+							    <label>
+							        <div class="fileUpload btn">
+							        	<i class="icon icon-plus-sign"></i>
+	    								<span>上传图片标图</span>
+	    								<input name="file" type="file" class="custom-file-upload">
+	    							</div>
+							    </label>
+							    <div class="clear"></div>
+
+								<label>
+									<div class="fileUpload btn">
+										<i class="icon icon-plus-sign"></i>
+	    								<span>上传图片素材</span>
+	    								<input name="file" type="file" class="custom-file-upload">
+	    							</div>
+								</label>
+								<div class="clear"></div>
+
+								<label>
+							        <input id="btmodel" type="submit" value="提交图片" class="buttonbtn">
+							    </label> 
+
+							</form>
+						</div>
+
+						<!--  -->
+						<div id="movie">
+							<form action="zxy/Login_Movie_Servlet" method="post"
+								enctype="multipart/form-data" class="elegant-aero">
+								<h1>上传视频素材
+							        <span>点击按钮选择相应素材.</span>
+							    </h1>
+
+							    <label>
+							        <div class="fileUpload btn">
+							        	<i class="icon icon-plus-sign"></i>
+	    								<span>上传视频标图</span>
+	    								<input name="file" type="file" class="custom-file-upload">
+	    							</div>
+							    </label>
+							    <div class="clear"></div>
+
+								<label>
+									<div class="fileUpload btn">
+										<i class="icon icon-plus-sign"></i>
+	    								<span>上传视频素材</span>
+	    								<input name="file" type="file" class="custom-file-upload">
+	    							</div>
+								</label>
+								<div class="clear"></div>
+
+								<label>
+							        <input id="btmodel" type="submit" value="提交视频" class="buttonbtn">
+							    </label> 
+
+							</form>
+						</div>
+						<!--  -->
+						<div id="model">
+							<form action="zxy/Login_Model_Servlet" method="post"
+								enctype="multipart/form-data" class="basic-grey">
+								<h1>上传图片素材
+							        <span>点击按钮选择相应素材.</span>
+							    </h1>
+
+							    <label>
+							        <div class="fileUpload btn">
+							        	<i class="icon icon-plus-sign"></i>
+	    								<span>上传模型标图</span>
+	    								<input name="file" type="file" class="custom-file-upload">
+	    							</div>
+							    </label>
+							    <div class="clear"></div>
+
+								<label>
+									<div class="fileUpload btn">
+										<i class="icon icon-plus-sign"></i>
+	    								<span>上传模型素材</span>
+	    								<input name="file" type="file" class="custom-file-upload">
+	    							</div>
+								</label>
+								<div class="clear"></div>
+
+								<label>
+							        <input id="btmodel" type="submit" value="提交模型" class="buttonbtn">
+							    </label> 
+
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			
+			<div id="mv">
+				<div id="first" style="text-align:center;">
+					<embed
+						src="http://share.vrs.sohu.com/my/v.swf&topBar=1&id=59215335&autoplay=false&from=page"
+						allowFullScreen="true" quality="high" width="480" height="400"
+						align="middle" allowScriptAccess="always"
+						type="application/x-shockwave-flash"></embed>
+				</div>
+				<div id="second" style="text-align:center;">
+					<embed
+						src="http://player.youku.com/player.php/sid/XNDMzODY4Nzc2/v.swf"
+						allowFullScreen="true" quality="high" width="480" height="400"
+						align="middle" allowScriptAccess="always"
+						type="application/x-shockwave-flash"></embed>
+				</div>
+			</div>
+	</body>
+</html>
